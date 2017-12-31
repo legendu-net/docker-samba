@@ -6,6 +6,7 @@ RUN apt-get update \
     && mkdir /smbshare
 
 COPY settings/smb.conf /etc/samba/smb.conf
+COPY scripts /scripts/
 
 EXPOSE 137-139 445
 

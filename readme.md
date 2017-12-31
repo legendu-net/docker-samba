@@ -31,10 +31,14 @@ docker pull dclong/samba
 ### Usage
 
 ```
-docker run -d \
+docker run -it \
     --log-opt max-size=50m \
     -p 137-139:137-139 \
     -p 445:445 \
+    -e DOCKER_USER=`id -un` \
+    -e DOCKER_USER_ID=`id -u` \
+    -e DOCKER_GROUP_ID=`getent group nogroup | cut -d: -f3` \
+    -e DOCKER_PASSWORD=`id -un` \
     -v /wwwroot:/smbshare \
     dclong/samba
 ```
