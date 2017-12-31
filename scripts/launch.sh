@@ -1,3 +1,3 @@
-#!/usr/bin/env sh
+#!/usr/bin/env bash
 
-service smbd restart
+/usr/sbin/smbd -FS

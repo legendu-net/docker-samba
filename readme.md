@@ -35,6 +35,6 @@ docker run -d \
     --log-opt max-size=50m \
     -p 137-139:137-139 \
     -p 445:445 \
-    -v /wwwroot:/wwwroot \
+    -v /wwwroot:/smbshare \
     dclong/samba
 ```
