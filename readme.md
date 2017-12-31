@@ -35,9 +35,6 @@ docker run -d \
     --log-opt max-size=50m \
     -p 137-139:137-139 \
     -p 445:445 \
-    -e DOCKER_USER_ID=`id -u` \
-    -e DOCKER_USER=`id -un` \
-    -e DOCKER_PASSWORD=`id -un` \
     -v /wwwroot:/wwwroot \
     dclong/samba
 ```

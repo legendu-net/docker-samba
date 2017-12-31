@@ -9,6 +9,6 @@ RUN apt-get update -y \
 COPY scripts /scripts/
 COPY settings/smb.conf /etc/samba/smb.conf
 
-EXPOSE 445
+EXPOSE 137-139 445
 
 ENTRYPOINT ["/scripts/init.sh"]
