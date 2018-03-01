@@ -42,3 +42,11 @@ docker run -it \
     -v /wwwroot:/smbshare \
     dclong/samba
 ```
+
+`DOCKER_USER` is the Samba user and `DOCKER_PASSWORD` is the Samba password. 
+You can mount the Samba share using the command below
+```
+sudo mount -t cifs -o user=samba_user,password=samba_password server_ip/smbshare /path_to_mount_point
+```
+where `samba_user` is the Samba user, i.e., `DOCKER_USER` (by default the output of `id -un` on the host)
+and `samba_password` is the Samba password, i.e., `DOCKER_PASSWORD` (by default the output of `id -un` on the host).
