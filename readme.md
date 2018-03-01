@@ -8,12 +8,6 @@ OS: Ubuntu 16.04
 
 Additional Software: samba.
 
-## About the Author
-
-[Personal Blog](http://www.legendu.net)   |   [GitHub](https://github.com/dclong)   |   [Bitbucket](https://bitbucket.org/dclong/)   |   [LinkedIn](http://www.linkedin.com/in/ben-chuanlong-du-1239b221/)
-
-
-
 ## How to run
 
 ### Build the Docker Image
@@ -51,3 +45,14 @@ sudo mount -t cifs -o user=samba_user,password=samba_password server_ip/smbshare
 ```
 where `samba_user` is the Samba user, i.e., `DOCKER_USER` (by default the output of `id -un` on the host)
 and `samba_password` is the Samba password, i.e., `DOCKER_PASSWORD` (by default the output of `id -un` on the host).
+
+### Possible Issues 
+
+mount error(115): Operation now in progress
+
+
+## About the Author
+
+[Personal Blog](http://www.legendu.net)   |   [GitHub](https://github.com/dclong)   |   [Bitbucket](https://bitbucket.org/dclong/)   |   [LinkedIn](http://www.linkedin.com/in/ben-chuanlong-du-1239b221/)
+
+
