@@ -16,19 +16,19 @@ Additional Software: samba.
 
 ## How to run
 
-### Build
+### Build the Docker Image
 
 ```
 ./build.sh
 ```
 
-### Docker pull command
+### Pull the Docker Image
 
 ```
 docker pull dclong/samba
 ```
 
-### Usage
+### Start a Container
 
 ```
 docker run -it \
@@ -42,6 +42,8 @@ docker run -it \
     -v /wwwroot:/smbshare \
     dclong/samba
 ```
+
+### Mount the Samba Share
 
 You can mount the Samba share using the command below
 ```
