@@ -4,7 +4,7 @@ Samba in Ubuntu.
 
 ## Detailed Information
 
-OS: Ubuntu 16.04
+OS: Ubuntu 18.04
 
 Additional Software: samba.
 
