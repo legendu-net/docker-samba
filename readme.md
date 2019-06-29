@@ -1,4 +1,4 @@
-# [dclong/samba](https://hub.docker.com/r/dclong/samba/)
+# dclong/samba [@DockerHub](https://hub.docker.com/r/dclong/samba/) | [@GitHub](https://github.com/dclong/docker-samba)
 
 Samba in Ubuntu. 
 
