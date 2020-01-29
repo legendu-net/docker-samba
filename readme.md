@@ -8,6 +8,10 @@ OS: Ubuntu 18.04
 
 Additional Software: samba.
 
+## Prerequisite
+You need to [install Docker](http://www.legendu.net/en/blog/docker-installation/) before you use this Docker image.
+
+
 ## How to run
 
 ### Build the Docker Image
