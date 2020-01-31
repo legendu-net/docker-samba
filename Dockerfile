@@ -1,7 +1,7 @@
 FROM dclong/ubuntu_b
 
 RUN apt-get update \
-    && apt-get install -y samba \
+    && apt-get install -y --no-install-recommends samba \
     && service smbd stop \
     && mkdir /smbshare
 
