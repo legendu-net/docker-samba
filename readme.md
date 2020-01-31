@@ -2,29 +2,11 @@
 
 Samba in Ubuntu. 
 
-## Detailed Information
-
-OS: Ubuntu 18.04
-
-Additional Software: samba.
-
 ## Prerequisite
 You need to [install Docker](http://www.legendu.net/en/blog/docker-installation/) before you use this Docker image.
 
 
-## How to run
-
-### Build the Docker Image
-
-```
-./build.sh
-```
-
-### Pull the Docker Image
-
-```
-docker pull dclong/samba
-```
+## Usage in Linux/Unix
 
 ### Start a Container
 
@@ -53,6 +35,12 @@ and `samba_password` is the Samba password, i.e., `DOCKER_PASSWORD` (by default 
 ### Possible Issues 
 
 mount error(115): Operation now in progress
+
+## [Detailed Information](http://www.legendu.net/en/blog/my-docker-images/#list-of-images-and-detailed-information) 
+
+## [Known Issues](http://www.legendu.net/en/blog/my-docker-images/#known-issues)
+
+## [About the Author](http://www.legendu.net/pages/about)
 
 
 ## About the Author
