@@ -19,7 +19,7 @@ docker run -it \
     -e DOCKER_USER_ID=`id -u` \
     -e DOCKER_GROUP_ID=`getent group nogroup | cut -d: -f3` \
     -e DOCKER_PASSWORD=`id -un` \
-    -v /wwwroot:/smbshare \
+    -v "$(pwd)":/smbshare \
     dclong/samba
 ```
 
