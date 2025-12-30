@@ -2,8 +2,8 @@
 FROM dclong/base
 # GIT: https://github.com/legendu-net/docker-base.git
 
-RUN apt-get update \
-    && apt-get install -y --no-install-recommends samba \
+RUN apt-get -y update \
+    && apt-get -y install --no-install-recommends samba \
     && service smbd stop \
     && mkdir /smbshare
 
